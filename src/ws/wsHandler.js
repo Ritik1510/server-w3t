@@ -10,7 +10,7 @@ export function wsHandler(ws) {
   );
 
   // Listen for messages from client
-  ws.on("message", () => messagesHandler(ws, msg));
+  ws.on("message", (msg) => messagesHandler(ws, msg));
 
   // Handle client closing connection
   ws.on("close", () => {

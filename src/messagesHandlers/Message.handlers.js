@@ -1,4 +1,4 @@
-export function messagesHandler(msg) {
+export function messagesHandler(ws, msg) {
   try {
     const { type, payload } = JSON.parse(msg.toString());
     console.log("📩 Received:", type, payload);
