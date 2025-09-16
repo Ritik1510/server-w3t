@@ -11,7 +11,7 @@ dotenv.config();
   - Handle new WebSocket connections
   - Start server listening on single server 
 */
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8080;
 const server = http.createServer(app);
 const wss = new WebSocketServer({ server });
 wss.on("connection", (ws) => {
